@@ -1,0 +1,68 @@
+/* Ini CSS */
+body{
+    padding:0;
+    margin:0;
+    font-family:sans-serif;
+}
+nav, article, .ast-sec{
+    border-bottom:2px solid black;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top:2px solid black;
+    padding: 10px;
+}
+.logo{
+    height: 48px;
+    width: 48px;
+    background-image:url(https://i.pinimg.com/736x/58/77/2d/58772d99474dd179db6d94ad981948e8.jpg);
+    background-size: cover;
+    border-radius: 50%;
+}
+.nav{
+    border: 1px solid;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 20px;
+}
+.nav-sec{
+    display: flex;
+    margin-right: 30px;
+}
+#home{
+    border-top-left-radius:5px;
+    border-bottom-left-radius:5px;
+}
+#mess{
+    border-top-right-radius:5px;
+    border-bottom-right-radius:5px;
+}
+.banner-pic{
+    height: 300px;
+    background-image: url(https://assets.ggwp.id/2023/08/Build-Sampo-Honkai-Star-Rail-LC.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.profile{
+    height: 100px;
+    text-align: center;
+}
+.profile-pic1{
+    height: 200px;
+    width: 200px;
+    background-image: url(https://i.pinimg.com/736x/c0/ac/56/c0ac56a4752db5ca061eae8b98b96008.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius:100px;
+    margin: 50px 80px 50px 50px;
+}
+.sect{
+    margin:50px 100px;
+}
+.sec-prof{
+    display:flex;
+}
