@@ -4,13 +4,16 @@ body{
     margin:0;
     font-family:sans-serif;
 }
-nav, article, .ast-sec{
+article, .art-sec1, .art-sec2{
     border-bottom:2px solid black;
+    width:100%;
 }
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width:98%;
+    border-bottom:2px solid black;
     border-top:2px solid black;
     padding: 10px;
 }
@@ -31,7 +34,6 @@ nav{
 }
 .nav-sec{
     display: flex;
-    margin-right: 30px;
 }
 #home{
     border-top-left-radius:5px;
@@ -63,6 +65,162 @@ nav{
 .sect{
     margin:50px 100px;
 }
-.sec-prof{
+.sec-prof, .box, .box3{
     display:flex;
+} 
+.box2, .box{
+    justify-content: space-between;
+}
+.box-border{
+    border: 2px solid black;
+}
+.box2{
+    width:50%;
+    padding: 50px;
+}
+.art-sec1{
+    height:450px;
+}
+.form-label{
+    margin-right:50px;
+}
+.button{
+    width:65%;
+}
+.input{
+    width:50%;
+}
+input{
+    margin-bottom:18px;
+}
+footer{
+    text-align:right;
+    height:40px;
+}
+@media screen and (max-width: 1150px) {
+    .profile-pic1 {
+      width: 150px;
+      height: 150px;
+    }
+    h2{
+        font-size:20px;
+    }
+    .box3{
+        display:block;
+    }
+    .input{
+        width:100%
+    }
+    .box{
+        justify-content: baseline;
+    }
+    .div-label {
+        width:60%
+    }
+    .button{
+        width:100%
+    }
+    .box2{
+        width:85%;
+    }
+}
+@media screen and (max-width: 925px) {
+    .profile-pic1 {
+      width: 120px;
+      height: 120px;
+    }
+    h2{
+        font-size:15px;
+    }
+}
+@media screen and (max-width: 850px) {
+    nav{
+        display:block;
+        
+    }
+    .logo{
+        margin-left: auto;
+        margin-right: auto;
+        height: 70px;
+        width: 70px;
+        margin-bottom:20px;
+    }
+    #home{
+        margin-left: auto;
+    }
+    #mess{
+        margin-right: auto;
+    }
+    .sec-prof{
+        display:block;
+    }
+    .profile-pic1{
+        margin-left: auto;
+        margin-right: auto;
+        height: 200px;
+        width: 200px;
+        margin-bottom:10px;
+    }
+    .art-sec1{
+        height:1000px;
+    }
+    .profile{
+        margin-bottom:200px;
+    }
+    @media screen and (max-width: 600px) {
+        .banner-pic{
+            height:200px;
+        }
+        .nav{
+            font-size:10px;
+        }
+        h1{
+            font-size:20px;
+        }
+        p, label{
+            font-size:12px;
+        }
+        .input{
+            width:90%
+        }
+        .this{
+            width:80%;
+            padding:20px;
+        }
+    }
+    @media screen and (max-width: 495px) {
+        .banner-pic{
+            height:200px;
+        }
+        .profile{
+            margin-bottom:100px;
+        }
+        .profile-pic1{
+            margin-left: auto;
+            margin-right: auto;
+            height: 150px;
+            width: 150px;
+            margin-bottom:10px;
+        }
+        .art-sec1{
+            height:700px;
+        }
+        .nav{
+            font-size:10px;
+        }
+        h1{
+            font-size:20px;
+        }
+        #male, #female{
+            font-size:8px;
+        }
+        p, label{
+            font-size:10px;
+        }
+        
+        .this{
+            width:80%;
+            padding:20px;
+        }
+    }
 }
