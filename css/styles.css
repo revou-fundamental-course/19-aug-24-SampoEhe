@@ -4,9 +4,24 @@ body{
     margin:0;
     font-family:sans-serif;
 }
-article, .art-sec1, .art-sec2{
-    border-bottom:2px solid black;
+article{
     width:100%;
+}
+.art-sec1{
+    border:1px solid grey;
+    border-radius: 10px;
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:50px;
+    background-color:rgb(196, 234, 245);
+    box-shadow: 5px 5px;
+}
+.c1{
+    background-color:rgb(196, 234, 245);
+}
+.c2{
+    background-color:rgb(147, 205, 255)
 }
 nav{
     display: flex;
@@ -16,6 +31,7 @@ nav{
     border-bottom:2px solid black;
     border-top:2px solid black;
     padding: 10px;
+    background-color:rgb(147, 205, 255)
 }
 .logo{
     height: 48px;
@@ -44,10 +60,18 @@ nav{
     border-bottom-right-radius:5px;
 }
 .banner-pic{
-    height: 300px;
-    background-image: url(https://assets.ggwp.id/2023/08/Build-Sampo-Honkai-Star-Rail-LC.jpg);
+    height: 500px;
     background-size: cover;
     background-position: center;
+}
+.img1{
+    background-image: url(https://assets.ggwp.id/2023/08/Build-Sampo-Honkai-Star-Rail-LC.jpg);
+}
+.img2{
+    background-image: url(https://lh4.googleusercontent.com/proxy/fSF4Z7ZwiMceikN1GdKrc2nVQBjXqgVd9v3Lrg-WNvE6F98U_4ibJoEwbQNw5oz-mO3SfeY0b1cRYh8DkjTWazw0m3k-hBbv6Jyucdak0b345huFXrT0Rp5w2w);
+}
+.img3{
+    background-image: url(https://gengamer.in/wp-content/uploads/Picsart_24-02-15_20-28-01-082.webp);
 }
 .profile{
     height: 100px;
@@ -57,6 +81,51 @@ nav{
     height: 200px;
     width: 200px;
     background-image: url(https://i.pinimg.com/736x/c0/ac/56/c0ac56a4752db5ca061eae8b98b96008.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius:100px;
+    margin: 50px 80px 50px 50px;
+}
+.profile-pic2{
+    height: 200px;
+    width: 200px;
+    background-image: url(https://cdn.oneesports.gg/cdn-data/2024/01/HonkaiStarRail_Penacony_Characters_Sparkle_Wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius:100px;
+    margin: 50px 80px 50px 50px;
+}
+.profile-pic3{
+    height: 200px;
+    width: 200px;
+    background-image: url(https://i.redd.it/giovanni-voice-actor-v0-7qxl5gdbtvtb1.jpg?width=739&format=pjpg&auto=webp&s=9eeefea84aa2b3ab34c9dbb09ded14c864af5840);
+    background-size: cover;
+    background-position: center;
+    border-radius:100px;
+    margin: 50px 80px 50px 50px;
+}
+.ach-pic1{
+    height: 200px;
+    width: 200px;
+    background-image: url(https://webstatic.hoyoverse.com/upload/op-public/2022/09/26/e979e2d9c5081cadcde04998e36a6c4f_1623525437662683209.png);
+    background-size: cover;
+    background-position: center;
+    border-radius:100px;
+    margin: 50px 80px 50px 50px;
+}
+.ach-pic2{
+    height: 200px;
+    width: 200px;
+    background-image: url(https://webstatic.hoyoverse.com/upload/op-public/2022/10/19/987be6718aa2b20b829d8fcdf72b0324_3871366622572464328.png);
+    background-size: cover;
+    background-position: center;
+    border-radius:100px;
+    margin: 50px 80px 50px 50px;
+}
+.ach-pic3{
+    height: 200px;
+    width: 200px;
+    background-image: url(https://mediaproxy.tvtropes.org/width/1200/https://static.tvtropes.org/pmwiki/pub/images/penacony.png);
     background-size: cover;
     background-position: center;
     border-radius:100px;
@@ -89,16 +158,29 @@ nav{
 }
 .input{
     width:50%;
+    border-radius:5px;
+    margin-left:10px;   
 }
 input{
     margin-bottom:18px;
+    
 }
 footer{
     text-align:right;
+    padding-top:1px;
     height:40px;
+    background-color:rgb(147, 205, 255);
+    border-top: 2px solid black;
+}
+#user{
+    color:rgb(147, 205, 255);
+    text-transform: uppercase;
 }
 @media screen and (max-width: 1150px) {
-    .profile-pic1 {
+    .banner-pic{
+        height:300px;
+    }
+    .profile-pic1, .profile-pic2, .profile-pic3,.ach-pic1,.ach-pic2,.ach-pic3 {
       width: 150px;
       height: 150px;
     }
@@ -125,12 +207,15 @@ footer{
     }
 }
 @media screen and (max-width: 925px) {
-    .profile-pic1 {
+    .profile-pic1, .profile-pic2, .profile-pic3,.ach-pic1,.ach-pic2,.ach-pic3 {
       width: 120px;
       height: 120px;
     }
     h2{
         font-size:15px;
+    }
+    .form{
+        margin-bottom:100px;
     }
 }
 @media screen and (max-width: 850px) {
@@ -154,7 +239,7 @@ footer{
     .sec-prof{
         display:block;
     }
-    .profile-pic1{
+    .profile-pic1,.profile-pic2,.profile-pic3,.ach-pic1,.ach-pic2,.ach-pic3{
         margin-left: auto;
         margin-right: auto;
         height: 200px;
@@ -162,11 +247,12 @@ footer{
         margin-bottom:10px;
     }
     .art-sec1{
-        height:1000px;
+        height:1100px;
     }
     .profile{
         margin-bottom:200px;
     }
+    
     @media screen and (max-width: 600px) {
         .banner-pic{
             height:200px;
@@ -187,6 +273,9 @@ footer{
             width:80%;
             padding:20px;
         }
+        .button{
+            margin:auto 10px auto 10px;
+        }
     }
     @media screen and (max-width: 495px) {
         .banner-pic{
@@ -195,7 +284,7 @@ footer{
         .profile{
             margin-bottom:100px;
         }
-        .profile-pic1{
+        .profile-pic1,.profile-pic2, .profile-pic3,.ach-pic1,.ach-pic2,.ach-pic3{
             margin-left: auto;
             margin-right: auto;
             height: 150px;
@@ -203,13 +292,14 @@ footer{
             margin-bottom:10px;
         }
         .art-sec1{
-            height:700px;
+            height:800px;
         }
         .nav{
             font-size:10px;
         }
         h1{
             font-size:20px;
+            text-align: center;
         }
         #male, #female{
             font-size:8px;

@@ -25,13 +25,16 @@
         <article >
             <div class="sect">
                 <header>
-                    <h1>Welcome user, to our website</h1>
+                    <h1>Welcome <span id='user'>user</span> to SAMPO MARKET</h1>
                 </header>
-                <p>Ini adalah website latihan pertama</p>
-                <div class="banner-pic"></div>
+                <p>This is the website of the market that belongs to me, Sampo Koski. We are totally trustworthy to do business with you.</p>
+                <div class="banner-pic img1"></div>
+                <div class="banner-pic img2"></div>
+                <div class="banner-pic img3"></div>
+                <button type="button" onclick="nextSlide(1)">Next</button>
             </div>
         </article>
-        <section class="art-sec1">
+        <section class="art-sec1 c1">
             <div class="sect">
                 <header>
                     <h1>Our Profile</h1>
@@ -39,15 +42,36 @@
                 <section class="sec-prof">
                     <div class="profile">
                         <div class="profile-pic1"></div>
-                        <h2>Software Engineer</h2>
+                        <h2>Merchant</h2>
                     </div>
                     <div class="profile">
-                        <div class="profile-pic1"></div>
-                        <h2>Software Engineer</h2>
+                        <div class="profile-pic2"></div>
+                        <h2>PR and Marketing</h2>
                     </div>
                     <div class="profile">
-                        <div class="profile-pic1"></div>
+                        <div class="profile-pic3"></div>
                         <h2>Software Engineer</h2>
+                    </div>
+                </section>  
+            </div>
+        </section>
+        <section class="art-sec1 c2">
+            <div class="sect">
+                <header>
+                    <h1>Achievements</h1>
+                </header>
+                <section class="sec-prof">
+                    <div class="profile">
+                        <div class="ach-pic1"></div>
+                        <h2>Best in Belobog</h2>
+                    </div>
+                    <div class="profile">
+                        <div class="ach-pic2"></div>
+                        <h2>Best in Xianzhou</h2>
+                    </div>
+                    <div class="profile">
+                        <div class="ach-pic3"></div>
+                        <h2>Best in Penacony</h2>
                     </div>
                 </section>  
             </div>
@@ -93,33 +117,31 @@
                     <br>
                     <input type="date" name="birth" id="birth" class="input">
                     <br>
-                    <input type="radio" name="male" id="male">
+                    <input type="radio" name="gender" id="male" onclick="radio(this.value)">
                     <label>Laki-laki</label>
                     <br>
-                    <input type="radio" name="female" id="female">
+                    <input type="radio" name="gender" id="female" onclick="radio(this.value)">
                     <label>Perempuan</label>
                     <br>
                     <textarea id="pesan" name="pesan" rows="4" cols="52" class="input"></textarea>
                 </div>
                 </div>
-                <input type="submit" class="button">
+                <button type="button" class="button" onclick='formValidation()'>Submit</button>
                 
             </form>
             <div class="box2 box-border this">
-                <p>Current time:</p>
-                <br>
-                <p>Nama:</p>
-                <p>Tanggal:</p>
-                <p>Jenis Kelamin:</p>
-                <p>Pesan:</p>
+                <p>Nama: <span id='name-r'></span></p>
+                <p>Tanggal Lahir: <span id='date-r'></span></p>
+                <p>Jenis Kelamin: <span id='gender-r'></span></p>
+                <p>Pesan: <span id='pesan-r'></span></p>
             </div>
             </div>
         </div>
         </section>
     </main>
     <footer>
-        <p>Made by RevoU</p>
+        <p>Made by Anelka Cornelius Hariyanto</p>
     </footer>
-    
+    <script src="js/script.js" t></script>
 </body>
 </html>
