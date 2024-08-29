@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
@@ -31,7 +34,11 @@
                 <div class="banner-pic img1"></div>
                 <div class="banner-pic img2"></div>
                 <div class="banner-pic img3"></div>
-                <button type="button" onclick="nextSlide(1)">Next</button>
+                <div class="nav-sec">
+                   <button type="button" onclick="nextSlide(1)" class="next">Next</button> 
+                   <p><--- Click here to change the banner!</p>
+                </div>
+                
             </div>
         </article>
         <section class="art-sec1 c1">
@@ -126,7 +133,7 @@
                     <textarea id="pesan" name="pesan" rows="4" cols="52" class="input"></textarea>
                 </div>
                 </div>
-                <button type="button" class="button" onclick='formValidation()'>Submit</button>
+                <button type="button" class="button next" onclick='formValidation()'>Submit</button>
                 
             </form>
             <div class="box2 box-border this">

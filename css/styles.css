@@ -2,20 +2,21 @@
 body{
     padding:0;
     margin:0;
-    font-family:sans-serif;
+    font-family:'Quicksand';
+}
+h1{
+    font-family:'Roboto';
 }
 article{
     width:100%;
 }
 .art-sec1{
     border:1px solid grey;
-    border-radius: 10px;
-    width:80%;
+    width:100%;
     margin-left:auto;
     margin-right:auto;
     margin-bottom:50px;
     background-color:rgb(196, 234, 245);
-    box-shadow: 5px 5px;
 }
 .c1{
     background-color:rgb(196, 234, 245);
@@ -176,6 +177,12 @@ footer{
     color:rgb(147, 205, 255);
     text-transform: uppercase;
 }
+.next{
+    margin:10px;
+    background-color: rgb(147, 205, 255);
+    border-radius: 10px;
+    padding: 10px;
+}
 @media screen and (max-width: 1150px) {
     .banner-pic{
         height:300px;
@@ -287,8 +294,8 @@ footer{
         .profile-pic1,.profile-pic2, .profile-pic3,.ach-pic1,.ach-pic2,.ach-pic3{
             margin-left: auto;
             margin-right: auto;
-            height: 150px;
-            width: 150px;
+            height: 120px;
+            width: 120px;
             margin-bottom:10px;
         }
         .art-sec1{
